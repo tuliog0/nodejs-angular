@@ -1,0 +1,347 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+/*----------------------------------------------------
+RESET PADRÃO
+------------------------------------------------------
+*/
+*{
+	padding: 0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+	color: #666;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+body{
+	background: #ECECEC
+}
+
+/*----------------------------------------------------
+SISTEMA DE GRIDS
+------------------------------------------------------
+*/
+.box-size-100{width:calc(100% - 30px); padding: 15px; margin:15px;}
+.box-size-95{width:calc(95% - 30px); padding: 15px; margin:15px;}
+.box-size-90{width:calc(90% - 30px); padding: 15px; margin:15px;}
+.box-size-85{width:calc(85% - 30px); padding: 15px; margin:15px;}
+.box-size-80{width:calc(80% - 30px); padding: 15px; margin:15px;}
+.box-size-75{width:calc(75% - 30px); padding: 15px; margin:15px;}
+.box-size-70{width:calc(70% - 30px); padding: 15px; margin:15px;}
+.box-size-65{width:calc(65% - 30px); padding: 15px; margin:15px;}
+.box-size-60{width:calc(60% - 30px); padding: 15px; margin:15px;}
+.box-size-55{width:calc(55% - 30px); padding: 15px; margin:15px;}
+.box-size-50{width:calc(50% - 30px); padding: 15px; margin:15px;}
+.box-size-45{width:calc(45% - 30px); padding: 15px; margin:15px;}
+.box-size-40{width:calc(40% - 30px); padding: 15px; margin:15px;}
+.box-size-35{width:calc(35% - 30px); padding: 15px; margin:15px;}
+.box-size-30{width:calc(30% - 30px); padding: 15px; margin:15px;}
+.box-size-25{width:calc(25% - 30px); padding: 15px; margin:15px;}
+.box-size-20{width:calc(20% - 30px); padding: 15px; margin:15px;}
+.box-size-15{width:calc(15% - 30px); padding: 15px; margin:15px;}
+.box-size-10{width:calc(10% - 30px); padding: 15px; margin:15px;}
+.box-size-5{width:calc(5% - 30px); padding: 15px; margin:15px;}
+.box-full-width{width: 100%; display:block; float: left;}
+*[class^=box-size]{
+	background: none;
+	display: block;
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.content{
+	max-width: 1280px;
+	margin:0 auto;
+}
+.clear{
+	clear: both;
+}
+
+/*----------------------------------------------------
+MENU PADRÃO
+------------------------------------------------------
+*/
+
+.box-menu-wraper{
+	display: block;
+	float: left;
+	width: 100%;
+	background: #4B088A
+}
+.box-menu{
+	
+}
+.box-menu ul{
+	display: block;
+	float: right;
+	padding: 15px 0 0;
+}
+.box-menu li{
+	display: block;
+	float: left;
+	padding: 10px;
+}
+.box-menu a{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 300;
+	color: #fff;
+	transition: 0.5s;
+
+}
+.box-menu a:hover{
+	color: #00A2FF
+}
+.box-menu .active{
+	font-weight: 600;
+	color: #00A2FF
+}
+
+/*----------------------------------------------------
+ESPAÇAMENTO DO GRID PADRÃO
+------------------------------------------------------
+*/
+.padding-none{padding: 0}
+.padding-left-none{padding-left: 0}
+.padding-right-none{padding-right: 0}
+.padding-top-none{padding-top: 0}
+.padding-bottom-none{padding-bottom: 0}
+
+.margin-none{margin: 0}
+.margin-left-none{margin-left: 0}
+.margin-right-none{margin-right: 0}
+.margin-top-none{margin-top: 0}
+.margin-bottom-none{margin-bottom: 0}
+
+/*----------------------------------------------------
+BOX DE ALINHAMENTO
+------------------------------------------------------
+*/
+.box-info{
+	background: #fff;
+}
+
+.box-info .title{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+.box-info .title-notice{
+	background: #CADDFC
+}
+.box-info .title-success{
+	background: #5DB7A9
+}
+.box-info .title-alert{
+	background: #DAB162
+}
+.box-info .title-danger{
+	background: #CB4F37
+}
+
+.box-info.box-info-default{
+	background: #fff
+}
+.box-info.box-info-default .title{
+	color: #666
+}
+.box-info.box-info-notice{
+	background: #CADDFC
+}
+.box-info.box-info-success{
+	background: #5DB7A9
+}
+.box-info.box-info-alert{
+	background: #DAB162
+}
+.box-info.box-info-danger{
+	background: #CB4F37
+}
+
+/*----------------------------------------------------
+BOTÕES DEFAULT
+------------------------------------------------------
+*/
+.btn{
+	display: block;
+	float: left;
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: .875em;
+	padding: 10px 25px;
+	font-weight: normal;
+	border: 0;
+	border-bottom: 3px #7F8181 solid;
+	background: #A7A7A7;
+}
+
+.btn-info{
+	background: #CADDFC;
+	border-bottom: 3px #AFC6EB solid;
+}
+.btn-success{
+	background: #5DB7A9;
+	border-bottom: 3px #449A8D solid;
+}
+.btn-alert{
+	background: #DAB162;
+	border-bottom: 3px #C0984C solid;
+}
+.btn-danger{
+	background: #CB4F37;
+	border-bottom: 3px #BB3F27 solid;
+}
+
+
+/*----------------------------------------------------
+BOX E FORMATAÇÃO DE FORMULÁRIOS
+------------------------------------------------------
+*/
+
+.box-form{
+	background: #fff
+}
+.box-form input[type=text],
+.box-form input[type=email],
+.box-form input[type=tel],
+.box-form input[type=password],
+.box-form textarea{
+	display: block;
+	float: left;
+	width: 100%;
+	background: #f6f6f6;
+	border: 1px #ebebeb solid;
+	padding: 15px 20px;
+	font-size: 1.2em;
+	color: #666
+}
+.box-form label{}
+.box-form span{
+	padding: 5px 0;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+/*----------------------------------------------------
+BOX VIEW PRODUTOS
+------------------------------------------------------
+*/
+.box-prod{
+	display: block;
+	float: left;
+	background: #fff
+}
+.box-prod .box-prod-header{
+	background: #E3B74D
+}
+
+.box-prod .box-prod-header.box-prod-info{
+	background: #4990AB
+}
+.box-prod .box-prod-header.box-prod-success{
+	background: #61BDA6
+}
+.box-prod .box-prod-header.box-prod-alert{
+	background: #E3B74D
+}
+.box-prod .box-prod-header.box-prod-danger{
+	background: #CB5B55
+}
+
+.box-prod .title{
+	padding: 15px 15px 0 15px;
+	display: block;
+	float: left;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-size: 1.6em
+}
+.box-prod .box-category{
+	padding: 0 15px 15px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	float: left;
+}
+.box-prod .box-category span,
+.box-prod .box-tag span{
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.box-prod .box-tag{
+}
+.box-prod .box-tag span{
+	display: block;
+	float: left;
+	padding: 15px 45px 15px 15px;
+	margin-top: 45px;
+	background: rgba(5, 5, 5, 0.35)
+}
+.box-prod .box-data{
+	.display: block;
+	float: left;
+	width: 100%;
+	padding: 5px 15px;
+}
+.box-prod .box-data span{
+	font-weight: bold;
+}
+.box-prod .box-control .btn{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+
+
+/*----------------------------------------------------
+FOOTER DEFAULT
+------------------------------------------------------
+*/
+.box-footer{
+	background: #3B0B39;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.box-footer span{
+	font-weight: bold;
+	color: #fff
+}
+
+/*----------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------
+*/
+
+@media all and (max-width: 1024px){
+	*[class^=box-size]{
+		width: calc(100% - 30px);
+	}
+	.box-prod{
+		width: calc(50% - 30px);
+	}
+	.box-dashboard .box-info{
+		width: calc(50% - 30px);
+	}
+}
+@media all and (max-width: 768px){
+	.box-prod{
+		width: calc(100% - 30px);
+	}
+	.box-dashboard .box-info{
+		width: calc(100% - 30px);
+	}
+}

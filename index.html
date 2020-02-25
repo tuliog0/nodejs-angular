@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tulio Gonçalves</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div class="box-menu-wraper">
+		<div class="content">
+			<div class="box-size-25 box-logo">
+				<a href="#/">
+					<img src="images/logo.png" class="box-full-width">
+				</a>
+			</div>
+			<div class="box-size-75 box-menu">
+				<ul>
+					<li><a href="#!/dashboard" ng-init="nav = 1" ng-class="{'active' : nav == 1}" ng-click="nav = 1">Dashboard</a></li>
+					<li><a href="#!/produtos" ng-class="{'active' : nav == 2}" ng-click="nav = 2">Produtos</a></li>
+					<li><a href="#!/cadastro" ng-class="{'active' : nav == 3}" ng-click="nav = 3">Cadastro</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<ng-view></ng-view>
+	
+	<div class="box-size-100 padding-left-none padding-right-none box-footer">
+		&copy 2020 - <span>		Túlio Melo Gonçalves	</span> - Todos os direitos reservados.
+	</div>
+
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/dashboardCtrl.js"></script>
+	<script src="controllers/produtosCtrl.js"></script>
+	<script src="controllers/cadastroCtrl.js"></script>
+</body>
+</html>
